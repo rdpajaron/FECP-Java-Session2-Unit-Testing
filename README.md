@@ -1,5 +1,5 @@
-Name: Romielle Pajaron
-Project Title: Build a Java Bank Account System
+Name: Romielle Pajaron <br/>
+Project Title: Build a Java Bank Account System <br/>
 
 Outputs:
 ![](out1.png)
