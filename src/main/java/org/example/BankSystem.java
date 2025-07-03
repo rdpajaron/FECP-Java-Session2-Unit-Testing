@@ -19,6 +19,7 @@ public class BankSystem {
                 System.out.print("Would you like to return to the menu? (yes/no): ");
                 String input = scanner.nextLine().toLowerCase();
                 if(!input.equals("yes")) {
+                    System.out.println("Thank you!");
                     return;
                 }
             }
