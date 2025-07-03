@@ -10,7 +10,7 @@ public class BankSystem {
     static HashMap<String, BankAccount> accountNumberAndAccount = new HashMap<>();
 
     public static void main(String[] args) {
-        int option = 0;
+        int option;
         boolean firstIteration = true;
         Scanner scanner = new Scanner(System.in);
 
