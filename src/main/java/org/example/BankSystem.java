@@ -65,7 +65,7 @@ public class BankSystem {
         }
     }
 
-    private static void withdraw(Scanner scanner) {
+    public static void withdraw(Scanner scanner) {
         System.out.print("Account Number: ");
         String accountNumber = scanner.nextLine();
         if(isAccountNotExisting(accountNumber)){
@@ -82,7 +82,7 @@ public class BankSystem {
         System.out.printf("Updated Balance: %.2f%n", accountNumberAndAccount.get(accountNumber).getAvailBalance());
     }
 
-    private static void deposit(Scanner scanner) {
+    public static void deposit(Scanner scanner) {
         System.out.print("Account Number: ");
         String accountNumber = scanner.nextLine();
 
@@ -103,7 +103,7 @@ public class BankSystem {
         }
     }
 
-    private static void checkBalance(Scanner scanner) {
+    public static void checkBalance(Scanner scanner) {
         System.out.print("Account Number: ");
         String accountNumber = scanner.nextLine();
         if(isAccountNotExisting(accountNumber)){
@@ -140,11 +140,11 @@ public class BankSystem {
 
     }
 
-    private static void viewAllAccounts() {
+    public static void viewAllAccounts() {
         bankAccounts.forEach(BankAccount::displayInformation);
     }
 
-    private static boolean isAccountNotExisting(String accountNumber){
+    public static boolean isAccountNotExisting(String accountNumber){
         return !accountNumberAndAccount.containsKey(accountNumber);
     }
 
